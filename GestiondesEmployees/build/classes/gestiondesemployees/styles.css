@@ -1,0 +1,74 @@
+/* General styling for the AnchorPane */
+#AnchorPane {
+    -fx-background-color: #f7f9fc;
+    -fx-padding: 20px;
+}
+
+/* Styling for labels */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+    -fx-font-weight: bold;
+}
+
+/* Styling for TextFields */
+.text-field {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Styling for DatePicker */
+.date-picker {
+    -fx-background-color: #ecf0f1;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+    -fx-padding: 5px;
+}
+
+/* Styling for Buttons */
+.button {
+    -fx-background-color: #2980b9;
+    -fx-text-fill: #fff;
+    -fx-border-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #3498db;
+}
+
+/* Styling for TabPane and Tabs */
+.tab-pane {
+    -fx-background-color: #e0e7ff;
+    -fx-tab-min-height: 40px;
+    -fx-tab-max-height: 40px;
+    -fx-tab-text-align: center;
+    -fx-tab-selected-background-color: #d6eaff;
+    -fx-tab-selected-text-color: #2c3e50;
+    -fx-tab-unselected-background-color: #e0e7ff;
+    -fx-tab-unselected-text-color: #2c3e50;
+}
+
+.tab {
+    -fx-padding: 10px;
+}
+
+/* Styling for TableView */
+.table-view {
+    -fx-background-color: #fff;
+    -fx-border-color: #bdc3c7;
+    -fx-border-radius: 5px;
+}
+
+.table-column {
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #ff0000; /* Rouge */
+}
+

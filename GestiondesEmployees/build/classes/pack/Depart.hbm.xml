@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 22 mai 2024 11:38:22 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pack.Depart" table="depart" catalog="projetdb" optimistic-lock="version">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="nomDept" type="string">
+            <column name="nom_dept" length="45" />
+        </property>
+        <property name="chefDept" type="string">
+            <column name="chef_dept" length="45" />
+        </property>
+        <set name="employees" table="employee" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="depart_id" not-null="true" />
+            </key>
+            <one-to-many class="pack.Employee" />
+        </set>
+    </class>
+</hibernate-mapping>
